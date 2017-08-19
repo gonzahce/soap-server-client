@@ -9,7 +9,7 @@ class client
 	{
 		$params = array('location' => 'http://localhost/soap-server-client/src/server.php', 
 			'uri' => 'urn:////localhost/soap-server-client/src/server.php',
-			'trace' => true);
+			'trace' => 1);
 		$this->instance = new SoapClient(NULL, $params);
 	}
 

@@ -1,10 +1,10 @@
-<?php 
+<?php
+
+require('../core/models/class.Conexion.php'); 
 
 /**
  * 
  */
-require('../core/models/class.Conexion.php');
-
  class server
  {
  	public function __construct()
@@ -23,9 +23,10 @@ require('../core/models/class.Conexion.php');
  	}
  }
 
- $params = array('uri' => 'soap-server-client/src/server.php');
- $server = new SoapServer(NULL, $params);
- $server->setClass('server');
- $server->handle();
+$params = array('uri' => 'soap-server-client/src/server.php');
+$server = new SoapServer(NULL, $params);
+$server->setClass('server');
+$server->handle();
+
 
 ?>
