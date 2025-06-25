@@ -11,5 +11,7 @@
             "email": "carlosegonzax@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "larapack/dd": "1.*"
+    }
 }
